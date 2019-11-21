@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Gray Book</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="home">홈</string>
+    <string name="webtoon">웹툰</string>
+    <string name="webnovel">웹소설</string>
+
+    <string name="special_char1">마루&amp;마야</string>
+    <string name="View">
+        각 작품 홈의 View는 각 편당 \n 클릭 수를 평균해 나타냅니다.
+    </string>
+
+    <string name="daily">
+        매일 무료는 매일 0시를 기준으로 무료이용권 \n 1매를 제공합니다.
+        0시 이전에 사용되지 않은 \n 무료이용권은 소멸합니다.
+        (누적되지 않습니다.) \n
+        최신 10화는 무료이용권으로 이용이 불가합니다.
+    </string>
+
+    <string name="review">
+        리뷰 및 별점은 25화(1권)당 \n 1번 작성 할 수 있습니다.
+
+    </string>
+    <string name="origin">
+        그레이북 자사 플랫폼에서만 공개되는 작품입니다.
+    </string>
+
+    <string name="tem">
+        공사장에서 벽돌을 나르고 삽질하는 불운한 인생의\n신영우
+        그런데 심지어 게임 속에서 노가다라니.\n하지만 불운한
+        인생이라 한탄하던 그에게도 행운이\n찾아오는 것인가
+        퀘스트 수행을 위하여 북쪽 끝의 \n동굴로 향한 그리드
+        그곳에서 파그마의 기서를 발견한 \n그는 레전드리 직업으로
+        전직하게 되는데...
+    </string>
+    <string name ="temchapter">
+        \n
+        제1장.최초? 성검\n
+        제2장.첫 번째 원죄\n
+        제3장.신전 건설!\n
+        제4장.지존도\n
+        제5장.대장장이의 신 헥세타이아\n
+        제6장.승부의 결과\n
+        제7장.템빨왕 VS 교황\n
+        제8장.소름
+
+    </string>
+
+    <string name="whogung">
+        내 후궁이 되어라\n
+        그게 의뢰다.
+    </string>
+
+    <string name="saza">
+        악의 편에 설 것인가\n
+        악에 맞설 것인가
+   </string>
+
+
+
+
+</resources>

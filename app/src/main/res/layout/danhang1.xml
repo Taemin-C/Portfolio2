@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/dimg"
+        android:scaleType="fitXY"
+        android:src="@drawable/danhang1"
+        android:layout_width="200dp"
+        android:layout_height="70dp" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:text="템빨"
+        android:layout_below="@id/dimg"
+        android:id="@+id/dtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:textSize="7dp"
+        android:text="박새날"
+        android:layout_below="@id/dtitle"
+        android:id="@+id/dwriter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

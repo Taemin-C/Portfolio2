@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+    <!--홈-->
+    <RelativeLayout
+        android:id="@+id/page1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+       <android.support.v4.view.ViewPager
+           android:id="@+id/Mainbanner"
+           android:layout_width="match_parent"
+           android:layout_height="100dp"></android.support.v4.view.ViewPager>
+
+        <LinearLayout
+
+            android:id="@+id/Line"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/Mainbanner"
+            android:background="#0d0d0d"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/base1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Line"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/Webtoon"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:onClick="mOnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/webtoonicon" />
+
+            <ImageButton
+                android:id="@+id/novelbtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:onClick="mOnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/webnovelicon" />
+
+            <ImageButton
+                android:id="@+id/moviebtn"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:onClick="mOnClick"
+                android:scaleType="fitXY"
+                android:src="@drawable/movieicon" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:id="@+id/Line2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/base1"
+            android:background="#0d0d0d"
+            android:orientation="horizontal"></LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/Line2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/base2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Line2"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="매일 무료 소설"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/morenovel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#00ff0000"
+                        android:text="더보기 >"
+                        android:textSize="10dp" />
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/novelvp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_below="@id/morenovel"
+                        android:layout_alignParentStart="true">
+
+                    </android.support.v4.view.ViewPager>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/base3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/base2"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="인기 웹툰"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/moretoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#00ff0000"
+                        android:text="더보기 >"
+                        android:textSize="10dp" />
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/toonvp"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_below="@id/moretoon"></android.support.v4.view.ViewPager>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/base4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/base3"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="단행본"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/danhang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#00ff0000"
+                        android:text="더보기 >"
+                        android:textSize="10dp" />
+
+
+                    <android.support.v4.view.ViewPager
+
+                        android:id="@+id/danhangvp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_below="@id/danhang"
+                        android:layout_alignParentEnd="true">
+
+                    </android.support.v4.view.ViewPager>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true">
+
+                    <Button
+
+                        android:id="@+id/login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#00ff0000"
+                        android:onClick="mOnClick"
+                        android:text="로그인"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/baseimg"
+            android:layout_width="75dp"
+            android:layout_height="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/novelimg1" />
+
+        <TextView
+            android:id="@+id/basetitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/baseimg"
+            android:text="템빨"
+            android:textColor="#000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/basewriter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basetitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/baseimg"
+            android:text="박새날"
+            android:textColor="#9f9f9f" />
+
+        <TextView
+            android:id="@+id/baseweek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basewriter"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/baseimg"
+            android:text="연재 중"
+            android:textColor="#9f9f9f" />
+
+        <RatingBar
+            android:id="@+id/starscore"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baseweek"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/baseimg"
+            android:isIndicator="true"
+            android:max="10"
+            android:numStars="5"
+            android:rating="10"
+            android:stepSize="0.5" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/baseweek"
+            android:layout_marginLeft="2dp"
+            android:layout_toEndOf="@id/starscore"
+            android:textColor="#029789"
+            android:textSize="13dp" />
+
+        <Button
+            android:id="@+id/Explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basetitle"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/editcustom"
+            android:text="작품소개" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#b6b7b6"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"></LinearLayout>
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <ImageButton
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/baseicon"
+            android:src="@drawable/ic_chat_bubble_black_24dp"
+            android:scaleType="fitXY"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/baseicon"
+            android:id="@+id/basecounter"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="257300"/>
+        <TextView
+
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/basecounter"
+            android:id="@+id/basetxt1"
+            android:layout_marginLeft="5dp"
+            android:textColor="#9e9e9e"
+            android:text="View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnreview"
+            android:layout_alignParentRight="true"
+            android:textColor="#9e9e9e"
+            android:text="리뷰 >"
+            android:background="#00ff0000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="작가의 말"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:text=">"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/RLticket"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/freeviewtxt"
+            android:text="남은 이용권"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:text="35"
+            android:textStyle="bold"
+            android:textColor="#8b8f8b"
+            android:id="@+id/freeview"
+            android:layout_toRightOf="@id/freeviewtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginRight="20dp"
+            android:text=">"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/dayilyFreeView"
+            android:text="매일 무료 이용권"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#e6544a"
+            android:text="사용 가능"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/dayilyFreeView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:padding="3dp"
+        android:background="#b6b7b6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <Button
+
+
+            android:inputType="textMultiLine"
+            android:background="@drawable/editcustom"
+            android:text="이어보기
+템빨 1권 - 5화"
+            android:layout_width="match_parent"
+            android:layout_height="33dp" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtcounter"
+            android:text="전체()"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"></Spinner>
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+
+
+
+</LinearLayout>
+

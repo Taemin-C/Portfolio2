@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/editsearch"
+        android:hint="검색"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+    <ImageButton
+        android:src="@drawable/ic_youtube_searched_for_black_24dp"
+        android:layout_toRightOf="@id/editsearch"
+        android:id="@+id/searchib"
+        android:background="#00ff0000"
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_below="@id/editsearch"
+        android:id="@+id/ranktext"
+        android:text="인기 검색어"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:id="@+id/rank"
+        android:layout_below="@id/ranktext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+</RelativeLayout>

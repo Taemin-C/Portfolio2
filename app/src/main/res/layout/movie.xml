@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_weight="1"
+        android:scaleType="fitXY"
+        android:src="@drawable/moviebanner"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+
+
+   <TableLayout
+       android:layout_weight="1"
+       android:stretchColumns="*"
+
+       android:padding="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+
+       <TableRow>
+           <Button
+               android:text="무료영화관"/>
+           <Button
+               android:text="가격인하관"/>
+           <Button
+               android:text="사자사전예약"/>
+       </TableRow>
+       <TableRow>
+           <Button
+               android:text="존윅3 입점"/>
+           <Button
+               android:text="분노의질주관"/>
+           <Button
+               android:text="로코 특가전"/>
+       </TableRow>
+   </TableLayout>
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:background="#8e8e8e"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+   <RelativeLayout
+       android:layout_weight="1"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="20dp">
+       <TextView
+           android:layout_centerInParent="true"
+           android:layout_alignParentLeft="true"
+           android:textColor="#060606"
+           android:textSize="17dp"
+           android:text="[NEW] 놓칠 수 없는 최신작"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <Button
+           android:id="@+id/newmovie"
+           android:textColor="#999999"
+           android:text="더보기 >"
+           android:background="#00ff0000"
+           android:layout_alignParentRight="true"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </RelativeLayout>
+
+
+    <GridView
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:id="@+id/gridview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="70dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"></GridView>
+    <LinearLayout
+        android:layout_weight="0.1"
+        android:background="#8e8e8e"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#060606"
+            android:textSize="17dp"
+            android:text="[인기] 지금 가장 핫한 영화"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:textColor="#999999"
+            android:text="더보기 >"
+            android:background="#00ff0000"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <GridView
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:id="@+id/gridview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnWidth="70dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"></GridView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+</ScrollView>

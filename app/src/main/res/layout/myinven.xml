@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffffff"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:onClick="IOnClick"
+            android:id="@+id/Allbtn"
+            android:textColor="#060606"
+            android:text="전체 작품"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="IOnClick"
+            android:id="@+id/buybtn"
+            android:textColor="#a4a6a4"
+            android:text="구매 작품"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="IOnClick"
+            android:id="@+id/downbtn"
+            android:textColor="#a4a6a4"
+            android:text="다운로드"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <FrameLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:visibility="visible"
+            android:id="@+id/invenlist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></ListView>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/buytext"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#a4a6a4"
+            android:text="구매한 작품이 없습니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/downtext"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="#a4a6a4"
+            android:text="다운로드 받은 작품이 없습니다."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

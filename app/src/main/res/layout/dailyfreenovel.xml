@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:visibility="visible"
+    android:id="@+id/page2_Webtoon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:scaleType="fitXY"
+        android:src="@drawable/novelimg4"
+        android:layout_width="match_parent"
+        android:layout_height="120dp" />
+    <LinearLayout
+
+        android:layout_below="@+id/banner"
+        android:id="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="nOnClick"
+            android:id="@+id/allgenre"
+            android:background="#949494"
+            android:text="전체"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="nOnClick"
+            android:id="@+id/romance"
+            android:background="#00ff0000"
+            android:text="로맨스"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="nOnClick"
+            android:id="@+id/oriental"
+            android:background="#00ff0000"
+            android:text="무협"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/fantazy"
+            android:onClick="nOnClick"
+            android:background="#00ff0000"
+            android:text="판타지"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_below="@+id/genre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/allnovelgenre"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:padding="5dp"
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/nRomance"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:padding="5dp"
+                android:id="@+id/listview2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:visibility="invisible"
+            android:id="@+id/nfantazy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:padding="5dp"
+                android:id="@+id/listview3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+

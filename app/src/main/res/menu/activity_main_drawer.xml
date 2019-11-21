@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/invenbtn"
+            android:title="보관함" />
+       <item
+            android:id="@+id/searchbtn"
+            android:title="검색" />
+
+        <item android:title="설정"
+            android:id="@+id/Option"/>
+        <item android:title="공지사항"
+            android:id="@+id/f"/>
+        <item android:title="고객센터"
+            android:id="@+id/Service"/>
+        <item android:title="이벤트/쿠폰"
+            android:id="@+id/CouponNavi"/>
+    </group>
+
+
+
+</menu>

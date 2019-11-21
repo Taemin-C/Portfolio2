@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:cursorVisible="false"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/couponedit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:hint="    쿠폰 번호 입력"
+        android:textSize="20dp"
+        android:background="@drawable/editcustom"/>
+
+    <Button
+        android:id="@+id/couponbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#245cf7"
+        android:text="등록하기"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록안내"
+        android:textColor="#bfbfbf"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-(쿠폰 번호 자리 수 안내)발급받은 카카오페이지 쿠폰 00자리를 입력해 주세요."
+        android:textColor="#bfbfbf" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-쿠폰 등록으로 충전한 캐시는 더보기 > 캐시내역 메뉴에서 확인 가능합니다."
+        android:textColor="#bfbfbf" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-쿠폰 등록으로 충전한 캐시는 환불되지 않습니다."
+        android:textColor="#bfbfbf" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-해당 쿠폰의 등록기간이 지나면 사용이 불가합니다."
+        android:textColor="#bfbfbf" />
+
+</LinearLayout>

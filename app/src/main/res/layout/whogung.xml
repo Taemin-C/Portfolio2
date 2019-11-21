@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        >
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/baseimg"
+                android:scaleType="fitXY"
+                android:src="@drawable/webtoonimg1"
+                android:layout_width="75dp"
+                android:layout_height="90dp" />
+
+            <TextView
+                android:id="@+id/basetitle"
+                android:layout_marginLeft="10dp"
+                android:text="후궁계약"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_toRightOf="@id/baseimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#9f9f9f"
+                android:id="@+id/basewriter"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/baseimg"
+                android:layout_below="@id/basetitle"
+                android:text="밥꾹,붉은마녀,레죵"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textColor="#9f9f9f"
+                android:text="월 연재"
+                android:id="@+id/baseweek"
+                android:layout_below="@id/basewriter"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/baseimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RatingBar
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/baseimg"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_below="@id/baseweek"
+                android:id="@+id/starscore"
+                android:numStars="5"
+                android:rating="10"
+                android:stepSize="0.5"
+                android:max="10"
+                android:isIndicator="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textColor="#029789"
+                android:textSize="13dp"
+                android:layout_marginLeft="2dp"
+                android:layout_below="@id/baseweek"
+                android:layout_toEndOf="@id/starscore"
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:background="@drawable/editcustom"
+                android:text="작품소개"
+                android:layout_below="@id/basetitle"
+                android:layout_alignParentRight="true"
+                android:id="@+id/Explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:background="#b6b7b6"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"></LinearLayout>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <ImageButton
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/baseicon"
+                android:src="@drawable/ic_chat_bubble_black_24dp"
+                android:scaleType="fitXY"
+                android:layout_width="24dp"
+                android:layout_height="24dp" />
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/baseicon"
+                android:id="@+id/basecounter"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456"/>
+            <TextView
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/basecounter"
+                android:id="@+id/basetxt1"
+                android:layout_marginLeft="5dp"
+                android:textColor="#9e9e9e"
+                android:text="명이 같이 보는 중!"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_alignParentRight="true"
+                android:textColor="#9e9e9e"
+                android:text="댓글 2000+ >"
+                android:background="#00ff0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:padding="3dp"
+            android:background="#b6b7b6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <Button
+
+
+                android:inputType="textMultiLine"
+                android:background="@drawable/editcustom"
+                android:text="이어보기
+후궁계약 7화"
+                android:layout_width="match_parent"
+                android:layout_height="33dp" />
+        </LinearLayout>
+
+
+<RelativeLayout
+    android:layout_marginHorizontal="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtcounter"
+        android:text="전체()"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+    android:id="@+id/spin"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="20dp"></Spinner>
+
+</RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/listview2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+
+
+
+
+    </LinearLayout>
+

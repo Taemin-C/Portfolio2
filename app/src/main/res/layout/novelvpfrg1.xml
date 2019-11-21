@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/nimg"
+        android:scaleType="fitXY"
+        android:src="@drawable/novelimg1"
+        android:layout_width="80dp"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:textSize="9dp"
+        android:textStyle="bold"
+        android:text="템빨"
+        android:layout_below="@id/nimg"
+        android:id="@+id/ntitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textSize="7dp"
+        android:text="박새날"
+        android:layout_below="@id/ntitle"
+        android:id="@+id/nwriter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ctm.project">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+
+        <activity android:name=".review"
+            android:theme="@style/AppTheme2">
+        </activity>
+        <activity android:name=".Write"
+            android:theme="@style/AppTheme2"></activity>
+        <activity android:name=".Content"
+            android:theme="@style/AppTheme2"></activity>
+        <activity android:name=".SignUp"></activity>
+        <activity android:name=".Inventory"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <activity android:name=".myinven" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Gift" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Notice" android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Like" android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".MoiveAct"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <activity android:name=".Novel"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".DailyFreeNovel"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="nOriginal"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Fantazy"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Romance"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Oriental"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity android:name=".LoginAct" android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"></activity>
+
+        <activity android:name=".webtoon" android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme2"></activity>
+
+        <activity android:name=".Search" android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme2"></activity>
+        <activity android:name=".Danhang_Tem"
+            android:theme="@style/AppTheme2"></activity>
+
+        <activity android:name=".NewMovie"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".MoiveAct"></activity>
+
+       <!--네비메뉴-->
+        <activity android:name=".Coupon"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Service_center"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme2"
+            ></activity>
+        <activity android:name=".Question"
+            android:parentActivityName=".Service_center"
+            android:theme="@style/AppTheme2"></activity>
+        <activity android:name=".Option"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".MainActivity"></activity>
+
+
+        <activity android:name=".Whogung"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".myinven"></activity>
+        <activity android:name=".whogungExp"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".Whogung"></activity>
+
+        <activity android:name=".Saza"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".MoiveAct"></activity>
+
+        <activity android:name=".Tem"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".Novel"></activity>
+        <activity android:name=".TemExp"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".Tem"></activity>
+        <activity android:name=".Ticket"
+            android:parentActivityName=".Tem"
+            android:theme="@style/AppTheme2"></activity>
+
+        <activity android:name=".Helper"
+            android:theme="@style/AppTheme2"
+            android:parentActivityName=".Service_center"></activity>
+    </application>
+
+
+
+</manifest>

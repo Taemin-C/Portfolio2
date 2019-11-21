@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/hundred"
+            android:text="100개"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:text="90개 + 10개 보너스"
+            android:textStyle="italic"
+            android:layout_below="@id/hundred"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/editcount1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="0"
+            android:background="@drawable/editcustom"
+            android:ems="2"
+            android:maxLength="3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="20dp"
+            android:text="9000캐시 X "
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/editcount1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/eighty"
+            android:text="80개"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:text="72개 + 8개 보너스"
+            android:textStyle="italic"
+            android:layout_below="@id/eighty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLength="3"
+            android:inputType="number"
+            android:id="@+id/editcount2"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="0"
+            android:background="@drawable/editcustom"
+            android:ems="2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="20dp"
+            android:text="7200캐시 X "
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/editcount2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/fifty"
+            android:text="50개"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:text="45개 + 5개 보너스"
+            android:textStyle="italic"
+            android:layout_below="@id/fifty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLength="3"
+            android:inputType="number"
+            android:id="@+id/editcount3"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="0"
+            android:background="@drawable/editcustom"
+            android:ems="2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="20dp"
+            android:text="4500캐시 X "
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/editcount3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/thirty"
+            android:text="30개"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:text="27개 + 3개 보너스"
+            android:textStyle="italic"
+            android:layout_below="@id/thirty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLength="3"
+            android:inputType="number"
+            android:id="@+id/editcount4"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="0"
+            android:background="@drawable/editcustom"
+            android:ems="2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="20dp"
+            android:text="2700캐시 X "
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/editcount4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/ten"
+            android:text="10개"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+
+            android:text="9개 + 1개 보너스"
+            android:textStyle="italic"
+            android:layout_below="@id/ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:maxLength="3"
+            android:inputType="number"
+            android:id="@+id/editcount5"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="0"
+            android:background="@drawable/editcustom"
+            android:ems="2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="20dp"
+            android:text="900캐시 X "
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/editcount5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/one"
+            android:text="1개"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <EditText
+            android:maxLength="3"
+            android:inputType="number"
+            android:id="@+id/editcount6"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:hint="0"
+            android:background="@drawable/editcustom"
+            android:ems="2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+        <TextView
+            android:textSize="20dp"
+            android:text="100캐시 X "
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/editcount6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <View
+        android:background="@color/splashbg"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"></View>
+    <RelativeLayout
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/totalnum"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="총 0개"
+            android:layout_marginLeft="5dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/totalprice"
+            android:layout_marginRight="5dp"
+            android:text=""
+            android:layout_toLeftOf="@id/cash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:id="@+id/cash"
+            android:layout_marginRight="5dp"
+            android:text="캐시"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <LinearLayout
+        android:padding="3dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <Button
+            android:id="@+id/tbuy"
+            android:layout_marginHorizontal="10dp"
+            android:text="충전하기"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

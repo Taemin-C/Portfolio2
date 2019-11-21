@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dadada"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="7dp">
+
+    <Spinner
+        android:id="@+id/spinnerquestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/editcustom"
+        android:spinnerMode="dialog"></Spinner>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editquestion"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/editcustom"
+                android:gravity="top|left"
+                android:padding="5dp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <Spinner
+        android:id="@+id/nation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editcustom"
+        android:spinnerMode="dialog"></Spinner>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/editcustom"
+        android:hint="  답변 받을 휴대폰 번호"
+        android:padding="5dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/editcustom"
+        android:hint="  답변 받을 이메일 주소"
+        android:padding="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="문의하신 내용에 대한 원인파악 및 원활한 상담을 위하여 이메일, 휴대폰 번호를 수집합니다. 수집된 개인 정보는 문의 접수일 기준으로 3년간 보관 후 파기됩니다.
+더 자세한 내용에 대해서는 개인정보처리방침을 참고하시기 바랍니다."
+        android:textSize="10dp" />
+
+    <CheckBox
+        android:id="@+id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="위 내용에 동의합니다." />
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/questionsend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#616060"
+        android:text="보내기"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+</LinearLayout>

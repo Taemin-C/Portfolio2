@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+        <LinearLayout
+            android:padding="5dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="hOnClick"
+                android:id="@+id/q1"
+                android:background="@drawable/editcustom"
+                android:gravity="center"
+                android:text="View 란?"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:onClick="hOnClick"
+                android:id="@+id/viewtxt"
+                android:visibility="gone"
+                android:gravity="center"
+                android:text="@string/View"
+                android:background="@drawable/editcustom"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="5dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="hOnClick"
+                android:id="@+id/q2"
+                android:background="@drawable/editcustom"
+                android:gravity="center"
+                android:text="매일 무료에 관해서"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:onClick="hOnClick"
+                android:visibility="gone"
+                android:id="@+id/dailyfreetxt"
+                android:gravity="center"
+                android:text="@string/daily"
+                android:background="@drawable/editcustom"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="hOnClick"
+                android:id="@+id/q3"
+                android:background="@drawable/editcustom"
+                android:gravity="center"
+                android:text="리뷰와 별점 관해서"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:onClick="hOnClick"
+                android:visibility="gone"
+                android:id="@+id/review"
+                android:gravity="center"
+                android:text="@string/review"
+                android:background="@drawable/editcustom"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:padding="5dp"
+
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="hOnClick"
+                android:id="@+id/q4"
+                android:background="@drawable/editcustom"
+                android:gravity="center"
+                android:text="오리지널이란?"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:onClick="hOnClick"
+                android:visibility="gone"
+                android:id="@+id/original"
+                android:gravity="center"
+                android:text="@string/origin"
+                android:background="@drawable/editcustom"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+</LinearLayout>
+
+
+
+    </ScrollView>
+
+
